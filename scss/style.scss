@@ -1,0 +1,309 @@
+$Dark-cyan: hsl(185, 75%, 39%);
+$Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$Dark-grayish-blue: hsl(227, 10%, 46%);
+$Dark-gray: hsl(0, 0%, 59%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: $Dark-cyan;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../../images/bg-pattern-top.svg),
+      url(../../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: bottom 300px right 830px, top 430px left 750px;
+    background-attachment: fixed;
+  }
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+article {
+  width: 83%;
+  max-width: 350px;
+  position: relative;
+  border-radius: 15px 15px 15px 15px;
+  background-color: white;
+  box-shadow: 3px 3px 50px hsl(184, 53%, 27%);
+  z-index: 1;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.card-bg {
+  width: 100%;
+
+  img {
+    border-radius: 15px 15px 0 0;
+  }
+}
+
+.profile-pic {
+  width: 30%;
+  position: absolute;
+  border-radius: 50%;
+  border: 5px solid white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 85px;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.section_II {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1em;
+
+  h1 {
+    font-size: 1em;
+    font-weight: 700;
+    color: $Very-dark-desaturated-blue;
+
+    span {
+      font-weight: 400;
+      color: $Dark-grayish-blue;
+    }
+  }
+
+  h2 {
+    font-size: 0.8em;
+    color: $Dark-grayish-blue;
+    font-weight: 400;
+    margin: 10px 0 22px 0;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(236, 236, 236);
+  padding: 25px 40px;
+  font-size: 1em;
+
+  span {
+    text-align: center;
+
+    h3 {
+      font-size: 0.9em;
+      font-weight: 700;
+      color: $Very-dark-desaturated-blue;
+    }
+
+    h4 {
+      font-size: 0.6em;
+      font-weight: 400;
+      color: $Dark-grayish-blue;
+      letter-spacing: 1.2px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 300px right 650px, top 430px left 600px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 200px right 530px, top 300px left 500px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 912px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 650px right 430px, top 700px left 330px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 820px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 520px right 400px, top 600px left 300px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 450px right 360px, top 530px left 250px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 350px right 180px, top 400px left 120px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 300px right 230px, top 440px left 120px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 393px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 350px right 180px, top 400px left 120px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 390px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 350px right 180px, top 400px left 120px;
+      background-attachment: fixed;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body {
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url(../../images/bg-pattern-top.svg),
+        url(../../images/bg-pattern-bottom.svg);
+      background-repeat: no-repeat;
+      background-position: bottom 300px right 150px, top 300px left 120px;
+      background-attachment: fixed;
+    }
+  }
+}
